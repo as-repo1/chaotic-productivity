@@ -1,0 +1,102 @@
+/* Add styles for the Pomodoro Timer section */
+.pomodoro-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.timer {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.hourglass {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("hourglass.svg");
+    background-size: contain;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.session-counter {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#timer-slider {
+    width: 80%;
+}
+
+/* Update styles for the buttons in the controls section */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.start-button, .pause-button, .reset-button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.start-button {
+    background-color: #a3be8c;
+    color: #fff;
+}
+
+.pause-button {
+    background-color: #bf616a;
+    color: #fff;
+}
+
+.reset-button {
+    background-color: #81a1c1;
+    color: #fff;
+}
+
+.start-button:hover, .pause-button:hover, .reset-button:hover {
+    background-color: #1e7b31;
+}
+
