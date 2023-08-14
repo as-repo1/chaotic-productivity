@@ -1,6 +1,6 @@
 # stop_watching
 A stopwatch web application using html , css , javascript . :) 
-# demo here -  [https://as-repo1.github.io/caotic-productivity/]
+# demo here -  https://as-repo1.github.io/caotic-productivity/
 
 Documentation
 Home Page
@@ -21,15 +21,5 @@ To-Do
 
     Interactive task list with editing and storage.
 
-Source Code
 
-    GitHub repository links.
-
-Portfolio (WIP)
-
-    Showcase projects and skills.
-
-GitHub Profile
-
-    Connect and explore.
 
