@@ -3,8 +3,7 @@
 Home Page
 
 - Project Cards: Organized, linked, and described projects.
-- Dark Mode Toggle: Switch between light and dark modes.
-
+  
 Stopwatch
 
 - Simple stopwatch with start, stop, and reset.
