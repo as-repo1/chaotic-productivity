@@ -14,7 +14,7 @@ Pomodoro Timer
 - Customizable timer intervals.
 - Session notes for productivity.
 
-To-Do
+To-Do list
 - Interactive task list with editing and storage.
 
 
