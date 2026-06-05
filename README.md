@@ -18,17 +18,18 @@ An offline-first, highly aesthetic productivity dashboard designed for both mode
 
 ```
 chaotic-productivity/
-├── index.html                   # Main unified Single Page Application entry point
-├── theme.css                    # Design tokens & color variables for Nord, Gruvbox, Dracula
-├── main.css                     # Main styling sheets (layouts, dashboard, buttons, cards, animations)
-├── main.js                      # Core SPA router, dashboard widgets, stopwatch, todo list, backup engine
-├── pomodoro.html                # Backup distraction-free standalone timer
-├── pomodoro.css                 # Premium Pomodoro timer & notes components styling
-├── pomodoro.js                  # Pomodoro countdown logic, Web Audio synthesizer, wake locks
+├── web/                         # Dedicated directory for web assets
+│   ├── index.html               # Main unified Single Page Application entry point
+│   ├── theme.css                # Design tokens & color variables for Nord, Gruvbox, Dracula
+│   ├── main.css                 # Main styling sheets (layouts, dashboard, buttons, cards, animations)
+│   ├── main.js                  # Core SPA router, dashboard widgets, stopwatch, todo list, backup engine
+│   ├── pomodoro.html            # Backup distraction-free standalone timer
+│   ├── pomodoro.css             # Premium Pomodoro timer & notes components styling
+│   └── pomodoro.js              # Pomodoro countdown logic, Web Audio synthesizer, wake locks
 ├── sync-assets.sh               # Sync script to mirror web source files into the Android assets
 ├── chaotic-productivity-debug.apk # Ready-to-install Compiled Android APK
 └── android-app/                 # Custom Android Jetpack Compose wrapper project
-    ├── app/src/main/assets/     # Offloaded web app files (synced from root)
+    ├── app/src/main/assets/     # Offloaded web app files (synced from web/)
     └── app/src/main/java/.../   # Kotlin source code, WebView configuration, Javascript Bridge
 ```
 
@@ -38,7 +39,7 @@ chaotic-productivity/
 
 ### Running in Web Browsers
 Since the application is 100% offline-safe and client-side, you can run it without a local web server:
-1. Open the [index.html](file:///home/chaos/coding/old-github/chaotic-productivity/index.html) file in any web browser.
+1. Open the [web/index.html](file:///home/chaos/coding/old-github/chaotic-productivity/web/index.html) file in any web browser.
 2. Toggle themes, log tasks, or run timers—all state is persisted in your browser's local storage.
 
 ### Synchronizing Web Assets to Android

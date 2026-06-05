@@ -189,13 +189,13 @@ set -e
 WORKSPACE_DIR="/home/chaos/coding/old-github/chaotic-productivity"
 ASSETS_DIR="$WORKSPACE_DIR/android-app/app/src/main/assets"
 mkdir -p "$ASSETS_DIR"
-cp "$WORKSPACE_DIR/index.html" "$ASSETS_DIR/"
-cp "$WORKSPACE_DIR/theme.css" "$ASSETS_DIR/"
-cp "$WORKSPACE_DIR/main.css" "$ASSETS_DIR/"
-cp "$WORKSPACE_DIR/main.js" "$ASSETS_DIR/"
-cp "$WORKSPACE_DIR/pomodoro.html" "$ASSETS_DIR/"
-cp "$WORKSPACE_DIR/pomodoro.css" "$ASSETS_DIR/"
-cp "$WORKSPACE_DIR/pomodoro.js" "$ASSETS_DIR/"
+cp "$WORKSPACE_DIR/web/index.html" "$ASSETS_DIR/"
+cp "$WORKSPACE_DIR/web/theme.css" "$ASSETS_DIR/"
+cp "$WORKSPACE_DIR/web/main.css" "$ASSETS_DIR/"
+cp "$WORKSPACE_DIR/web/main.js" "$ASSETS_DIR/"
+cp "$WORKSPACE_DIR/web/pomodoro.html" "$ASSETS_DIR/"
+cp "$WORKSPACE_DIR/web/pomodoro.css" "$ASSETS_DIR/"
+cp "$WORKSPACE_DIR/web/pomodoro.js" "$ASSETS_DIR/"
 ```
 
 ### 6.2 Gradle Compilation Profile
