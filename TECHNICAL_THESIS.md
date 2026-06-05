@@ -201,6 +201,9 @@ cp "$WORKSPACE_DIR/web/pomodoro.js" "$ASSETS_DIR/"
 ### 6.2 Gradle Compilation Profile
 The Android wrapper is compiled using a Gradle task targeting release and debug APK configurations. In the build pipeline, configuration caching (`--configuration-cache`) is utilized, reducing build time to under 10 seconds. The output APK file structure embeds the asset folders into the APK zip compression layer, resulting in a compiled executable size of 14MB.
 
+### 6.3 Automated CI/CD Pipeline (GitHub Actions)
+To achieve continuous integration and delivery, the project uses a GitHub Actions pipeline configured in `.github/workflows/android.yml`. Upon every push to the `main` branch or when a release tag is pushed (e.g., `v2.0`), the remote runner automatically performs the asset sync script copy steps, initializes JDK 17, compiles the Android application wrapper, uploads the generated debug APK binary as an artifact, and optionally attaches the compiled package to the published GitHub Release. This guarantees code compilation consistency and automates release distribution.
+
 ---
 
 ## 7. Conclusion

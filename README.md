@@ -1,6 +1,14 @@
 # Chaotic Productivity ⚡
 
-An offline-first, highly aesthetic productivity dashboard designed for both modern web browsers and standalone Android environments. It integrates a focused Single-Page Application (SPA) dashboard, a customized Pomodoro timer with local audio bell synthesis, a millisecond-precision stopwatch with lap comparison metrics, a prioritized To-Do list, and a universal single-file backup and restore mechanism.
+An offline-first, highly aesthetic productivity dashboard designed for both modern web browsers and standalone Android environments. It integrates a focused Single-Page Application (SPA) dashboard, a customized Pomodoro timer with local audio bell synthesis, a millisecond-precision stopwatch with lap comparison metrics, a prioritized To-Do list, and a universal single-file data portability engine.
+
+[![Android CI/CD Pipeline](https://github.com/as-repo1/chaotic-productivity/actions/workflows/android.yml/badge.svg)](https://github.com/as-repo1/chaotic-productivity/actions/workflows/android.yml)
+
+## Preview
+
+<p align="center">
+  <img src="screenshots/pomodoro_timer.png" width="360" alt="Pomodoro Timer Interface" />
+</p>
 
 ## Key Features
 
@@ -89,6 +97,20 @@ Backup files are exported as a structured JSON file containing all active user c
   }
 }
 ```
+
+---
+
+## CI/CD Pipeline
+
+This project features an automated GitHub Actions CI/CD workflow defined in [.github/workflows/android.yml](.github/workflows/android.yml). 
+
+On every push to the `main` branch or when a release tag (e.g., `v*`) is created, the pipeline automatically:
+1. Checks out the repository source code.
+2. Configures a JDK 17 environment.
+3. Automatically executes the `./sync-assets.sh` script to bundle the latest web assets.
+4. Compiles the Android wrapper project (`./gradlew assembleDebug`).
+5. Uploads the generated `app-debug.apk` as a build artifact.
+6. Automatically attaches the compiled APK directly to the GitHub Release on tag push.
 
 ---
 
