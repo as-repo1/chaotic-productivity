@@ -186,7 +186,7 @@ To keep development unified, a bash script (`sync-assets.sh`) automatically form
 ```bash
 #!/bin/bash
 set -e
-WORKSPACE_DIR="/home/chaos/coding/old-github/chaotic-productivity"
+WORKSPACE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ASSETS_DIR="$WORKSPACE_DIR/android-app/app/src/main/assets"
 mkdir -p "$ASSETS_DIR"
 cp "$WORKSPACE_DIR/web/index.html" "$ASSETS_DIR/"

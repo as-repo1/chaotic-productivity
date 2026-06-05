@@ -3,7 +3,9 @@
 
 set -e
 
-WORKSPACE_DIR="/home/chaos/coding/old-github/chaotic-productivity"
+# Determine the script's directory dynamically to ensure portability and security
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WORKSPACE_DIR="$SCRIPT_DIR"
 ASSETS_DIR="$WORKSPACE_DIR/android-app/app/src/main/assets"
 
 echo "Creating assets directory: $ASSETS_DIR"

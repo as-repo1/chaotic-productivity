@@ -39,7 +39,7 @@ chaotic-productivity/
 
 ### Running in Web Browsers
 Since the application is 100% offline-safe and client-side, you can run it without a local web server:
-1. Open the [web/index.html](file:///home/chaos/coding/old-github/chaotic-productivity/web/index.html) file in any web browser.
+1. Open the [web/index.html](web/index.html) file in any web browser.
 2. Toggle themes, log tasks, or run timers—all state is persisted in your browser's local storage.
 
 ### Synchronizing Web Assets to Android
@@ -93,4 +93,4 @@ Backup files are exported as a structured JSON file containing all active user c
 ---
 
 ## Technical Specifications
-For a deep dive into the system architecture, DOM lifecycle optimizations, Kotlin-JavaScript WebBridge serialization, and performance optimization profiles, refer to the **[TECHNICAL_THESIS.md](file:///home/chaos/coding/old-github/chaotic-productivity/TECHNICAL_THESIS.md)** file.
+For a deep dive into the system architecture, DOM lifecycle optimizations, Kotlin-JavaScript WebBridge serialization, and performance optimization profiles, refer to the **[TECHNICAL_THESIS.md](TECHNICAL_THESIS.md)** file.
