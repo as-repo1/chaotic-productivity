@@ -1,0 +1,17 @@
+# Android build outputs & local properties
+android-app/.gradle/
+android-app/.kotlin/
+android-app/build/
+android-app/app/build/
+android-app/local.properties
+local.properties
+
+# Binary output APKs (best uploaded to GitHub Releases rather than committed in repository)
+*.apk
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log

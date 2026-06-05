@@ -1,0 +1,118 @@
+/* ═══════════════════════════════════════════════════════════════
+   Chaotic Productivity — Design Tokens & Theme Definitions
+   Offline-safe: No external font imports (works inside APK WebView)
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Default Theme: Nord ─────────────────────────────────── */
+
+  /* Surface palette */
+  --bg-primary: #2e3440;
+  --bg-secondary: #3b4252;
+  --bg-tertiary: #434c5e;
+  --bg-card: rgba(59, 66, 82, 0.65);
+  --bg-elevated: #4c566a;
+
+  /* Borders */
+  --border-color: rgba(76, 86, 106, 0.4);
+  --border-hover: rgba(136, 192, 208, 0.5);
+
+  /* Typography */
+  --text-primary: #eceff4;
+  --text-secondary: #d8dee9;
+  --text-muted: #616e88;
+
+  /* Accent */
+  --accent-color: #88c0d0;
+  --accent-glow: rgba(136, 192, 208, 0.2);
+  --accent-hover: #8fbcbb;
+  --accent-active: #81a1c1;
+  --gradient-accent: linear-gradient(135deg, #88c0d0, #81a1c1);
+
+  /* Semantic colors */
+  --color-success: #a3be8c;
+  --color-danger: #bf616a;
+  --color-warning: #ebcb8b;
+  --color-info: #81a1c1;
+
+  /* Typography stacks — system-first for offline APK */
+  --font-sans: 'Outfit', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Fira Code', ui-monospace, 'Cascadia Code', 'SF Mono', Menlo, monospace;
+
+  /* Glass / depth */
+  --glass-blur: 12px;
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 20px rgba(136, 192, 208, 0.25), 0 0 60px rgba(136, 192, 208, 0.1);
+
+  /* Radius tokens */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* Motion */
+  --transition-speed: 0.25s;
+}
+
+/* ── Theme: Gruvbox ──────────────────────────────────────── */
+[data-theme="gruvbox"] {
+  --bg-primary: #1d2021;
+  --bg-secondary: #282828;
+  --bg-tertiary: #3c3836;
+  --bg-card: rgba(40, 40, 40, 0.7);
+  --bg-elevated: #504945;
+
+  --border-color: rgba(102, 92, 84, 0.5);
+  --border-hover: rgba(254, 128, 25, 0.5);
+
+  --text-primary: #fdf4c1;
+  --text-secondary: #ebdbb2;
+  --text-muted: #928374;
+
+  --accent-color: #fe8019;
+  --accent-glow: rgba(254, 128, 25, 0.2);
+  --accent-hover: #fabd2f;
+  --accent-active: #d65d0e;
+  --gradient-accent: linear-gradient(135deg, #fe8019, #d65d0e);
+
+  --color-success: #b8bb26;
+  --color-danger: #fb4934;
+  --color-warning: #fabd2f;
+  --color-info: #83a598;
+
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.15);
+  --shadow-glow: 0 0 20px rgba(254, 128, 25, 0.3), 0 0 60px rgba(254, 128, 25, 0.1);
+}
+
+/* ── Theme: Dracula ──────────────────────────────────────── */
+[data-theme="dracula"] {
+  --bg-primary: #1e1f29;
+  --bg-secondary: #282a36;
+  --bg-tertiary: #343746;
+  --bg-card: rgba(40, 42, 54, 0.75);
+  --bg-elevated: #44475a;
+
+  --border-color: rgba(98, 114, 164, 0.4);
+  --border-hover: rgba(189, 147, 249, 0.5);
+
+  --text-primary: #f8f8f2;
+  --text-secondary: #e2e2dc;
+  --text-muted: #6272a4;
+
+  --accent-color: #bd93f9;
+  --accent-glow: rgba(189, 147, 249, 0.2);
+  --accent-hover: #ff79c6;
+  --accent-active: #ae81ff;
+  --gradient-accent: linear-gradient(135deg, #bd93f9, #ff79c6);
+
+  --color-success: #50fa7b;
+  --color-danger: #ff5555;
+  --color-warning: #f1fa8c;
+  --color-info: #8be9fd;
+
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 20px rgba(189, 147, 249, 0.3), 0 0 60px rgba(189, 147, 249, 0.1);
+}
